@@ -11,7 +11,7 @@ orders.csv, order_lines.csv, targets.csv: Original raw datasets provided for ord
 sql_views_creation.sql: SQL scripts used to create modular views for each key visual and KPI card in Power BI. It includes modeling with SQL joins for constructing cleaned and joined fact and dimension tables.
 
 ## 3. atliq_supply_chain_dashboard/
-Atliq_Supply_Chain_Dashboard.pbix: Final Power BI dashboard that includes
+Atliq_Supply_Chain_Dashboard.pbix: Final Power BI dashboard that includes monthly OTIF KPIs, fill rates, and product-level delivery insights. Built using DAX measures, slicers, bookmarks, and interactive area charts. The dashboard supports dynamic filtering and drill-downs via Power BI data modeling.
 
 ---
 
