@@ -1,51 +1,29 @@
 # Atliq-Supply-Chain-Analysis
 This repository contains the complete workflow for building a data-driven Supply Chain Performance Dashboard for Atliq Mart. The project involves preparing SQL views for key metrics, loading curated datasets into Power BI, and creating an interactive dashboard for tracking On-Time, In-Full, and OTIF delivery KPIs, along with Line and Volume fill rates. The goal is to support operational visibility and data-backed decision-making in supply chain performance monitoring.
 
-Dataset Overview
-The following folders organize the datasets and SQL assets used in this project:
+## 📁 Dataset Overview
+The following folders organize the datasets, SQL queries and dashboard used in this project:
 
-1. raw_datasets/
+### 1. raw_datasets/
 orders.csv, order_lines.csv, targets.csv: Original raw datasets provided for order-level and line-level delivery information, as well as target KPIs per customer.
 
-2. sql_queries/
-sql_views_creation.sql: SQL scripts used to create modular views for each key visual and KPI card in Power BI.
+### 2. sql_queries/
+sql_views_creation.sql: SQL scripts used to create modular views for each key visual and KPI card in Power BI. It includes modeling with SQL joins for constructing cleaned and joined fact and dimension tables.
 
-fact_dim_modeling.sql: SQL joins for constructing cleaned and joined fact and dimension tables.
+## 3. atliq_supply_chain_dashboard/
+Atliq_Supply_Chain_Dashboard.pbix: Final Power BI dashboard that includes
 
-eda_queries.sql: Exploratory SQL used to understand data patterns, delivery gaps, and inconsistencies.
+---
 
-📊 Power BI Dashboard
-📁 atliq_supply_chain_dashboard/
-AtliQ_Supply_Chain_Dashboard.pbix: Final Power BI dashboard that includes:
+## 📚 More Information
+For detailed documentation and project notes, refer to the Notion workspace:
 
-Monthly On-Time, In-Full, and OTIF KPIs
+👉 [View Full Project Details on Notion](https://www.notion.so/AtliQ-Mart-Supply-Chain-Analysis-2261279cd9ac80828d74fd7068cce3e2?source=copy_link)
 
-Fill rate metrics (Volume & Line)
+---
 
-Product delivery trends and performance breakdowns
+## 🔗 Dataset Source
 
-Dynamic bookmarks and slicers for interactive exploration
+The original raw dataset used in this project can be found on Code Basics:
 
-Power BI techniques include:
-
-KPI cards with DAX measures and color logic
-
-Area charts with sparklines
-
-Page navigation using bookmarks and arrow shapes
-
-Slicers and filters for customer/product selection
-
-Modeling relationships for dynamic drill-downs
-
-📚 More Information
-For detailed documentation, design decisions, and project notes, refer to the Notion workspace:
-
-👉 View Full Project on Notion
-
-🧮 Tools Used
-PostgreSQL: SQL-based data preparation and view creation
-
-Power BI: Dashboard building and interactive DAX-based visuals
-
-Notion: Project documentation and reflection
+📥 [Atliq Mark Supply Chain Dataset on Code Basics](https://codebasics.io/challenges/codebasics-resume-project-challenge/5)
