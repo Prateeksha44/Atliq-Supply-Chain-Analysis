@@ -7,7 +7,7 @@ The following folders organize the datasets, SQL queries and dashboard used in t
 ### 1. raw_datasets/
 orders.csv, order_lines.csv, targets.csv: Original raw datasets provided for order-level and line-level delivery information, as well as target KPIs per customer.
 
-### 2. sql_queries/
+### 2. atliq_supply_ch/
 sql_views_creation.sql: SQL scripts used to create modular views for each key visual and KPI card in Power BI. It includes modeling with SQL joins for constructing cleaned and joined fact and dimension tables.
 
 ### 3. atliq_supply_chain_dashboard/
