@@ -5,13 +5,13 @@ This repository contains the complete workflow for building a data-driven Supply
 The following folders organize the datasets, SQL queries and dashboard used in this project:
 
 ### 1. raw_datasets/
-orders.csv, order_lines.csv, targets.csv: Original raw datasets provided for order-level and line-level delivery information, as well as target KPIs per customer.
+- 'dim.customers, dim_date, dim_products, dim_targets_orders, fact_order_lines, fact_orders_aggregate, meta_dat, metrics_list' : Original raw datasets provided for fact and dimension tables with order-level and line-level delivery information, as well as target KPIs per customer.
 
-### 2. atliq_supply_ch/
-sql_views_creation.sql: SQL scripts used to create modular views for each key visual and KPI card in Power BI. It includes modeling with SQL joins for constructing cleaned and joined fact and dimension tables.
+### 2. sql_queries/
+- 'atliq_sql_queries': SQL scripts used to create modular views for each key visual and KPI card in Power BI. It includes modeling with SQL joins for constructing cleaned and joined fact and dimension tables.
 
-### 3. atliq_supply_chain_dashboard/
-Atliq_Supply_Chain_Dashboard.pbix: Final Power BI dashboard that includes monthly OTIF KPIs, fill rates, and product-level delivery insights. Built using DAX measures, slicers, bookmarks, and interactive area charts. The dashboard supports dynamic filtering and drill-downs via Power BI data modeling.
+### 3. pbi_dashboard/
+- 'atliq_supply_chain_dashboard' : Final Power BI dashboard that includes monthly OTIF KPIs, fill rates, and product-level delivery insights. Built using DAX measures, slicers, bookmarks, and interactive area charts. The dashboard supports dynamic filtering and drill-downs via Power BI data modeling.
 
 ---
 
